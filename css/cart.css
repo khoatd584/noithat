@@ -56,6 +56,9 @@ body {
     text-decoration: none;
     transition: all 0.3s ease-in;
 }
+.amado-nav ul li a span {
+    color: #fbb710;
+}
 .amado-nav ul li a:hover {
     color: #fbb710;
 }
@@ -243,6 +246,9 @@ body {
     position: relative;
     z-index: 1;
     margin-left: 82px;
+    width: 304px;
+    padding: 30px 20px;
+    margin-left: 33px;
 }
 .cart-summary h5 {
     font-size: 18px;

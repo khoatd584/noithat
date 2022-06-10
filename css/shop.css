@@ -56,6 +56,9 @@ body {
     text-decoration: none;
     transition: all 0.3s ease-in;
 }
+.amado-nav ul li a span {
+    color: #fbb710;
+}
 .amado-nav ul li a:hover {
     color: #fbb710;
 }
@@ -245,6 +248,7 @@ body {
     overflow: hidden;
     background-color: #ffffff;
 }
+
 .single-product-wrapper .product-img {
     position: relative;
     z-index: 1;
