@@ -14,6 +14,9 @@ body {
     text-align: left;
     background-color: #fff;
 }
+img {
+    vertical-align: middle;
+}
 .main-content-wrapper {
     display: flex;
     position: relative;
@@ -257,6 +260,8 @@ body {
 }
 .single-product-wrapper .product-img img {
     height: auto;
+    transition: all 1s;
+    max-width: 100%;
     vertical-align: middle;
 }
 .single-product-wrapper .product-img .hover-img {
@@ -264,10 +269,13 @@ body {
     top: 0;
     left: 0;
     z-index: 10;
-    opacity: 0;
-    visibility: hidden;
+    opacity: 1;
     height: auto;
-    vertical-align: middle;
+    padding-right: 15px;
+}
+.single-product-wrapper .product-img:hover .hover-img {
+    opacity: 0;
+    max-width: 100%;
 }
 .product-description {
     position: relative;
