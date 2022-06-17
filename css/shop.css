@@ -325,6 +325,57 @@ img {
 .ratings-cart .cart {
     margin-right: 15px;
 }
+.single_navigation {
+    display: flex;
+    flex: 0 0 100%;
+    max-width: 100%;
+    justify-content: flex-end;
+}
+.single_navigation nav {
+    display: block;
+}
+.pagination {
+    position: relative;
+    z-index: 1;
+    margin-top: 50px;
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    border-radius: 4px;
+}
+.pagination .page-item .page-link {
+    width: 40px;
+    height: 40px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 40px;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    z-index: 1;
+    cursor: pointer;
+    padding: 10px;
+}
+.pagination .page-item .page-link:hover {
+    color: #fff;
+    box-shadow: none;
+    background-color: #fbb710;
+    z-index: 2;
+    text-decoration: none;
+    outline: 0 solid transparent;
+    transition: all 500ms ease 0s;
+}
+.pagination .page-item.active .page-link {
+    color: #fff;
+    box-shadow: none;
+    background-color: #fbb710;
+}
+.pagination .page-item:first-child .page-link {
+    margin-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
 .newletter-area {
     position: relative;
     z-index: 1;
