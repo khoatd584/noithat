@@ -189,6 +189,7 @@ body {
     -ms-transform: scale(1.2);
     -moz-transform: scale(1.2);
     transform: scale(1.2);
+    border-radius: 4px;
 }
 
 .single-products-catagory .hover-content {
