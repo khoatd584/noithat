@@ -146,16 +146,33 @@ img {
     position: relative;
     z-index: 1;
 }
+.widget:hover .catagories-menu {
+    display: block;
+}
 .widget .widget-title {
     font-size: 16px;
     color: rgb(36, 36, 36);
     margin-bottom: 30px;
     margin-top: 40px;
+    cursor: pointer;
 }
-.catagories-menu ul li {
+.catagories-menu {
     list-style: none;
+    display: none;
+    animation: nav 1s forwards;
 }
-.catagories-menu ul li a {
+
+@keyframes nav {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.catagories-menu a {
     text-decoration: none;
     font-size: 16px;
     display: block;
@@ -164,9 +181,16 @@ img {
     padding: 15px 0 15px 20px;
     transition: all 0.3s ease-in;
 }
-.catagories-menu ul li a:hover,
-.catagories-menu ul li a:focus {
+.catagories-menu a:hover,
+.catagories-menu a:focus {
     color: #fbb710;
+}
+.widget:hover .widget-desc {
+    display: block;
+}
+.widget-desc {
+    display: none;
+    animation: nav 1.2s forwards;
 }
 .widget .form-check {
     margin-bottom: 25px;
@@ -237,7 +261,8 @@ img {
     text-rendering: auto;
     font-weight: 900;
 }
-.product-topbar .total-products .view a:first-child {
+.product-topbar .total-products .view a:hover,
+.product-topbar .total-products .view a:focus {
     background-color: #fbb710;
 }
 .single-column {
@@ -514,4 +539,8 @@ img {
 }
 .single_widget_copywrite span {
     color: #fbb710;
+}
+iframe[name=page] {
+    width: 100%;
+    height: 2000px;
 }
